@@ -1,57 +1,86 @@
 # ElevateLabs_Task5
-# Exploratory Data Analysis (EDA) – Student Performance Dataset
-This project presents a detailed exploratory analysis of the StudentsPerformance.csv dataset.
-The goal is to uncover insights into how different factors such as gender, parental education, lunch type, and test preparation affect students' academic performance in Math, Reading, and Writing.
+ # Student Performance - Exploratory Data Analysis (EDA)
+This project explores how factors like gender, lunch type, parental education, and test preparation impact students' performance in Math, Reading, and Writing.
 
-# About the Dataset
+# Dataset Info
 File Name: StudentsPerformance.csv
+
 Records: 1000 students
-Features: 8 columns
-Data Types: Categorical + Numerical
-# Features Included:
+
+Columns: 8 (categorical + numerical)
+
+Features include:
+
 gender
+
 race/ethnicity
+
 parental level of education
-lunch (standard or free/reduced)
-test preparation course (completed or not)
-math score
-reading score
-writing score
-# Tools & Libraries Used
+
+lunch (standard / free-reduced)
+
+test preparation course (completed / none)
+
+math score, reading score, writing score
+
+# Tools Used
 Python 3 (Google Colab)
+
 Pandas
+
 Seaborn
+
 Matplotlib
-FPDF / MS Word (for report generation)
-# EDA Steps Followed
-✅ Step 1: Data Loading & Cleaning
-Loaded the dataset using pandas.read_csv()
-Cleaned column names for consistency
-Checked for missing values and duplicates
-✅ Step 2: Dataset Overview
-Viewed top records using .head()
-Inspected data types using .info()
-Generated summary statistics with .describe()
-✅ Step 3: Univariate Analysis
-Countplots for categorical columns like gender, lunch, etc.
-Histograms and boxplots for scores
-Outlier and distribution detection
-✅ Step 4: Correlation & Pairplot
-Correlation heatmap to identify relationships
-Pairplot to explore multivariate score patterns
-✅ Step 5: Bivariate Analysis
-Grouped average scores by:
+
+FPDF / MS Word (for report)
+
+# EDA Workflow
+✅ 1. Data Loading & Cleaning
+Imported CSV using pandas.read_csv()
+
+Cleaned column names
+
+Checked for missing values & duplicates
+
+✅ 2. Quick Dataset Overview
+Used .head(), .info(), .describe()
+
+Reviewed data types & basic stats
+
+✅ 3. Univariate Analysis
+Countplots for gender, lunch, etc.
+
+Histograms and boxplots for score distributions
+
+Detected outliers
+
+✅ 4. Correlation & Pairwise Plots
+Correlation heatmap (Math, Reading, Writing)
+
+Pairplot for multivariate patterns
+
+✅ 5. Bivariate Analysis
+Average scores grouped by:
+
 Gender
+
 Race/Ethnicity
-Test Preparation Course
-# Key Insights
-🧠 Reading & Writing scores are highly correlated
-👩‍🎓 Female students score higher in Reading and Writing
-👨‍🎓 Male students slightly outperform in Math
-📚 Students who completed test prep scored significantly higher
-🍽️ Students with standard lunch performed better
-🏅 Group E students had the best overall performance
+
+Test prep course
+
+# Key Findings
+📚 Reading & Writing scores are strongly correlated
+
+👩 Female students do better in Reading & Writing
+
+👨 Male students slightly ahead in Math
+
+✅ Test prep boosts all scores noticeably
+
+🍴 Standard lunch students perform better
+
+🏅 Group E students score the highest overall
 
 # Conclusion
-This EDA highlights the impact of demographics and preparation on academic performance.
-The findings can help educators design targeted academic interventions and provide data-driven support to students.
+This analysis shows how student demographics and preparation influence academic outcomes. The insights can help teachers create more personalized support and improve student success.
+
